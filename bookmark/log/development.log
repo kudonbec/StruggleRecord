@@ -68,3 +68,10 @@ Processing ItemsController#index (for 127.0.0.1 at 2011-02-12 12:15:24) [GET]
 Rendering template within layouts/items
 Rendering items/index
 Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2011-02-12 13:31:56) [GET]
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 27ms (View: 23, DB: 0) | 200 OK [http://localhost/items]
