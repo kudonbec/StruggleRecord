@@ -75,11 +75,11 @@ body.layout-fixed .sizer { /* custom */
 
 /* Variable asyimmetrical sidebars (wide) (default) */
 body.layout-left-main-right .outer {
-	margin-left: 204px;			/*** cLcwv ***/
-	margin-right: 278px;			/*** cLcwv ***/
+	margin-left: 0px;			/*** cLcwv ***/
+	margin-right: 20px;			/*** cLcwv ***/
 }
 body.layout-left-main .outer {
-	margin-left: 294px;			/*** cLcwv ***/
+	margin-left: 45px;			/*** cLcwv ***/
 }
 body.layout-main-right .outer {
 	margin-right: 344px;			/*** cLcwv ***/
@@ -95,10 +95,10 @@ body.layout-main-right .colright {
 
 /* Fixed asyimmetrical sidebars (wide) */
 body.l-m-r-fix .outer, body.l-m-fix .outer, body.l-m-fix .outer {
-	margin-left: 204px;
+	margin-left: 0px;
 }
 body.l-m-r-fix .outer, body.m-r-fix .outer, body.m-r-fix .outer {
-	margin-right: 278px;
+	margin-right: 45px;
 }
 body.l-m-fix .colleft {
 	width: 204px;
