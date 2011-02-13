@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  no: 1
+  name: MyString
+  capacity: 1
+  summary: MyText
+
+two:
+  no: 1
+  name: MyString
+  capacity: 1
+  summary: MyText
