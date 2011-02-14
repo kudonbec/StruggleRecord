@@ -74,7 +74,7 @@
 
               <div class="breadcrumb">
                 <a href="http://www.sukusuku-scrum.jp/">Homepage</a> | <a href="http://www.sukusuku-scrum.info/">Info</a> |
-                &raquo; <strong><font color="#0033ff">Event List</font></strong> | <%= link_to 'New Event', new_event_path %>
+                &raquo; <strong><font color="#0033ff">Event List</font></strong>
               </div>
             </div>
 
@@ -84,7 +84,7 @@
                   <div class="float-wrap">
                     <div class="colmain">
                       <div id="main">
-                        <h1 class="title">Sukusuku-Scrum Event List</h1>
+                        <h1 class="title"><div align="right"><%= link_to image_tag('/images/new_event.jpeg', { :border => '0', :alt => 'New Event'}), new_event_path %></div><strong>Event List</strong></h1>
                         <div class="tabs"></div>
                         <!-- node --> 
                         <div id="node-10" class="node odd full-node node-type-page">
@@ -114,8 +114,8 @@
                               </tr>
                             <% end %>
                             </table>
-                            <br />
-                            <%= link_to 'New Event', new_event_path %>
+                            <br /><br /><br />
+                            <div align="right"><%= link_to image_tag('/images/new_event.jpeg', { :border => '0', :alt => 'New Event'}), new_event_path %></div>
                             <br/></br/></p>
 
                           </div>
