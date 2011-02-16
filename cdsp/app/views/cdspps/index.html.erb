@@ -1,0 +1,23 @@
+<h1>Listing cdspps</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cdspps.each do |cdspp| %>
+  <tr>
+    <td><%= cdspp.date %></td>
+    <td><%= link_to 'Show', cdspp %></td>
+    <td><%= link_to 'Edit', edit_cdspp_path(cdspp) %></td>
+    <td><%= link_to 'Destroy', cdspp, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cdspp', new_cdspp_path %>

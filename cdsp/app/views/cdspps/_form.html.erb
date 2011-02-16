@@ -1,0 +1,21 @@
+<%= form_for(@cdspp) do |f| %>
+  <% if @cdspp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cdspp.errors.count, "error") %> prohibited this cdspp from being saved:</h2>
+
+      <ul>
+      <% @cdspp.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.calendar_date_select :date, :time => true, :popup => true %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
