@@ -1,4 +1,18 @@
 Sample::Application.routes.draw do
+  resources :weeks
+
+  resources :sessions
+
+  resources :days
+
+  resources :months
+
+  resources :years
+
+  resources :places
+
+  resources :statuses
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

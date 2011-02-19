@@ -1,21 +1,22 @@
+<br />
+<h1 class="title">会場情報</h1>
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <b>会場名 ：</b>
   <%= @place.name %>
 </p>
 
 <p>
-  <b>Adress:</b>
+  <b>会場場所 ：</b>
   <%= @place.adress %>
 </p>
 
 <p>
-  <b>Url:</b>
+  <b>ＵＲＬ ：</b>
   <%= @place.url %>
 </p>
 
-
-<%= link_to 'Edit', edit_place_path(@place) %> |
-<%= link_to image_tag('/images/Edit.jp2', { :border => '0', :alt => 'Edit'}), edit_place_path(@place) %> |
-<%= link_to image_tag('/images/Back.jp2', { :border => '0', :alt => 'Back'}), places_path %>
+<br />
+<%= link_to image_tag('/images/Edit.jp2', { :border => '0', :alt => 'Edit'}), edit_place_path(@place) %>
+<div align="right"><%= link_to image_tag('/images/Back.jp2', { :border => '0', :alt => 'Back'}), places_path %></div>

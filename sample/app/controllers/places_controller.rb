@@ -44,7 +44,7 @@ class PlacesController < ApplicationController
 
     respond_to do |format|
       if @place.save
-        format.html { redirect_to(@place, :notice => '会場を登録しました！') }
+        format.html { redirect_to(@place, :notice => 'Place was successfully created.') }
         format.xml  { render :xml => @place, :status => :created, :location => @place }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class PlacesController < ApplicationController
 
     respond_to do |format|
       if @place.update_attributes(params[:place])
-        format.html { redirect_to(@place, :notice => '会場の情報を更新しました！') }
+        format.html { redirect_to(@place, :notice => 'Place was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
