@@ -1,0 +1,26 @@
+<%= form_for(@place) do |f| %>
+  <% if @place.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@place.errors.count, "") %> 個のエラーを発見したので、"登録できません"。以下のエラーを解消して下さい。</h2>
+
+      <ul>
+      <% @place.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <br />
+  <div class="field">
+    会場名 ： <%= f.text_field :name, 'size' => 53 %><br />
+    <br />
+    会場場所 ： <%= f.text_field :adress, 'size' => 50 %><br />
+    <br />
+    ＵＲＬ ： <%= f.text_field :url, 'size' => 53 %><br />
+  </div>
+  <div class="actions">
+    <br />
+    <div align="right"><input type="image" src="/images/CreatePlace.jp2" name="commit" id="place_submit" value="submit" alt="Create Place" border="0"><br /></div>
+  </div>
+<% end %>

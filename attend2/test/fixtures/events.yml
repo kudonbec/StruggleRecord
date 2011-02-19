@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  times: 1
+  name: MyString
+  status: 
+  date: MyString
+  place: 
+  capacity: 1
+  summary: MyText
+  created_at: 2011-02-17 12:07:23
+  updated_at: 2011-02-17 12:07:23
+
+two:
+  times: 1
+  name: MyString
+  status: 
+  date: MyString
+  place: 
+  capacity: 1
+  summary: MyText
+  created_at: 2011-02-17 12:07:23
+  updated_at: 2011-02-17 12:07:23

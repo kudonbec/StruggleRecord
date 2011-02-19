@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @place.name %>
+</p>
+
+<p>
+  <b>Adress:</b>
+  <%= @place.adress %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @place.url %>
+</p>
+
+
+<%= link_to 'Edit', edit_place_path(@place) %> |
+<%= link_to image_tag('/images/Edit.jp2', { :border => '0', :alt => 'Edit'}), edit_place_path(@place) %> |
+<%= link_to image_tag('/images/Back.jp2', { :border => '0', :alt => 'Back'}), places_path %>
